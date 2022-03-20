@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <listener>
+        <listener-class>Init</listener-class>
+    </listener>
+
+    <!-- Connexion -->
+    <servlet>
+        <servlet-name>Connexion</servlet-name>
+        <servlet-class>services.Connexion</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Connexion</servlet-name>
+        <url-pattern>/Connexion</url-pattern>
+    </servlet-mapping>
+
+    <!-- Authentification -->
+    <servlet>
+        <servlet-name>Authentification</servlet-name>
+        <servlet-class>services.Authentification</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Authentification</servlet-name>
+        <url-pattern>/Authentification</url-pattern>
+    </servlet-mapping>
+
+    <!-- Accueil -->
+    <servlet>
+        <servlet-name>Accueil</servlet-name>
+        <servlet-class>services.Accueil</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Accueil</servlet-name>
+        <url-pattern>/Accueil</url-pattern>
+    </servlet-mapping>
+
+    <!-- Deconnexion -->
+    <servlet>
+        <servlet-name>Deconnexion</servlet-name>
+        <servlet-class>services.Deconnexion</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Deconnexion</servlet-name>
+        <url-pattern>/Deconnexion</url-pattern>
+    </servlet-mapping>
+
+    <!-- Abo -->
+    <servlet>
+        <servlet-name>Abo</servlet-name>
+        <servlet-class>services.Abo</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Abo</servlet-name>
+        <url-pattern>/Abo</url-pattern>
+    </servlet-mapping>
+
+    <!-- Biblio -->
+    <servlet>
+        <servlet-name>Biblio</servlet-name>
+        <servlet-class>services.Biblio</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Biblio</servlet-name>
+        <url-pattern>/Biblio</url-pattern>
+    </servlet-mapping>
+
+    <!-- TousDocuments -->
+    <servlet>
+        <servlet-name>TousDocuments</servlet-name>
+        <servlet-class>services.TousDocuments</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>TousDocuments</servlet-name>
+        <url-pattern>/TousDocuments</url-pattern>
+    </servlet-mapping>
+
+    <!-- AjouterDocument -->
+    <servlet>
+        <servlet-name>AjouterDocument</servlet-name>
+        <servlet-class>services.AjouterDocument</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AjouterDocument</servlet-name>
+        <url-pattern>/AjouterDocument</url-pattern>
+    </servlet-mapping>
+
+    <!-- Emprunter -->
+    <servlet>
+        <servlet-name>Emprunter</servlet-name>
+        <servlet-class>services.Emprunter</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Emprunter</servlet-name>
+        <url-pattern>/Emprunter</url-pattern>
+    </servlet-mapping>
+
+    <!-- Rendre -->
+    <servlet>
+        <servlet-name>Rendre</servlet-name>
+        <servlet-class>services.Rendre</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Rendre</servlet-name>
+        <url-pattern>/Rendre</url-pattern>
+    </servlet-mapping>
+
+
+
+
+</web-app>
